@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .hour {
+  @apply absolute top-[50%] left-[50%] h-[4px] w-[15%] bg-slate-800 rounded-[50%];
+  transform: rotate(-90deg);
+  transform-origin: left;
+}
+
+.min {
+  transform: rotate(-10deg);
+} */

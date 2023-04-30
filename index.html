@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ornamental Digital Clock</title>
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+
+  <section class="h-[100vh] w-full flex flex-col justify-center items-center">
+
+    <div class="mb-2 flex flex-col md:flex-row gap-1">
+      <button
+        type="button"
+        id="btn-green"
+        class="bg-green-800 text-xl text-white border border-green-800 font-semibold rounded-md hover:text-green-800 hover:bg-white duration-200 py-2 px-4"
+      >
+        Green Clock
+      </button>
+      <button
+        type="button"
+        id="btn-blue"
+        class="bg-blue-700 text-xl text-white border border-blue-700 font-semibold rounded-md hover:text-blue-700 hover:bg-white duration-200 py-2 px-4"
+      >
+        Blue Clock
+      </button>
+      <button
+        type="button"
+        id="btn-brown"
+        class="bg-amber-950 text-xl text-white border border-amber-950 font-semibold rounded-md hover:text-amber-950 hover:bg-white duration-200 py-2 px-4"
+      >
+        Brown Clock
+      </button>
+      <button
+        type="button"
+        id="btn-brick2"
+        class="bg-lime-100 text-xl text-stone-700 border border-lime-100 font-semibold rounded-md hover:text-lime-100 hover:bg-stone-700 duration-200 py-2 px-4"
+      >
+        Bricks Clock
+      </button>
+    </div>
+
+    <div class="clock relative h-auto w-[80%] max-w-2xl">
+      <img src="/imgs/clock-green.png" alt="clock">
+      <div class="hour absolute w-[40%] -m-[20%] top-1/2 left-1/2">
+        <img src="/imgs/hour.png" alt="hour">
+      </div>
+      <div class="min absolute w-[40%] -m-[20%] top-1/2 left-1/2">
+        <img src="/imgs/min.png" alt="second">
+      </div>
+      <div class="sec absolute w-[40%] -m-[20%] top-1/2 left-1/2">
+        <img src="/imgs/sec.png" alt="second">
+      </div>
+    </div>
+
+    <div class="mt-2 flex flex-col md:flex-row gap-1">
+      <button
+        type="button"
+        id="btn-red"
+        class="bg-red-600 text-xl text-white border border-red-600 font-semibold rounded-md hover:text-red-600 hover:bg-white duration-200 py-2 px-4"
+      >
+        Red Clock
+      </button>
+      <button
+        type="button"
+        id="btn-brick"
+        class="bg-pink-900 text-xl text-white border border-pink-900 font-semibold rounded-md hover:text-pink-900 hover:bg-white duration-200 py-2 px-4"
+      >
+        Brick Clock
+      </button>
+      <button
+        type="button"
+        id="btn-sand"
+        class="bg-orange-200 text-xl text-stone-700 border border-orange-200 font-semibold rounded-md hover:text-orange-200 hover:bg-stone-700 duration-200 py-2 px-4"
+      >
+        Sand Clock
+      </button>
+      <button
+        type="button"
+        id="btn-black"
+        class="bg-black text-xl text-white border border-black font-semibold rounded-md hover:text-black hover:bg-white duration-200 py-2 px-4"
+      >
+        Black Clock
+      </button>
+    </div>
+
+  </section>
+
+  <script src="./main.js"></script>
+</body>
+</html>
